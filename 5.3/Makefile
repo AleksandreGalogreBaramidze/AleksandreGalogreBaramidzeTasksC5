@@ -10,7 +10,7 @@ all : concat
 concat: getline.o concat.o main.o
 	$(CC) $(CFLAGS) -o concat getline.o concat.o main.o
 
-mgetline.o: getline.c
+getline.o: getline.c
 	$(CC) $(CFLAGS) -c -o getline.o getline.c
 	
 concat.o: concat.c
